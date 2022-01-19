@@ -1,10 +1,19 @@
 from flask import Flask
 from delivery.ext import site
+from delivery.ext import config
+from delivery.ext import toobar
+from delivery.ext import db
+from delivery.ext import cli
+
 
 
 def create_app():
     app = Flask(__name__)
-    site.init_app(app)
+    config.init_app(app) 
+    db.init_app(app) 
+    cli.init_app(app) 
+    toobar.init_app(app) 
+    site.init_app(app) 
     return app
     
     
