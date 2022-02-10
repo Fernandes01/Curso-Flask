@@ -18,6 +18,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = false
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
 DEBUG_TB_PROFILER_ENABLED = true
 DEBUG_TB_INTERCEPT_REDIRECTS = false
+APPNAME = "Twitch Foods (dev)"
 EXTENSIONS = [
     "delivery.ext.db:init_app",
     "delivery.ext.auth:init_app",
